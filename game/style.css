@@ -1,0 +1,52 @@
+#game {
+    width: 700px;
+    height: 400px;
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+}
+
+.cat {
+    width: 85px;
+    height: 70px;
+    background-image: url(img/kitty.png);
+    background-size: 80px 70px;
+    position: relative;
+    top: 320px;
+    left: 100px;
+}
+
+.boxes {
+    width: 80px;
+    height: 70px;
+    background-image: url(img/boxes.png);
+    background-size:  80px 70px;
+    position: relative;
+    top: 282px;
+    left: 540px;
+    animation: boxesRun 1s infinite linear;
+}
+
+@keyframes boxesRun {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 330px;
+    }
+    50% {
+        top: 220px;
+    }
+    100% {
+        top: 330px;
+    }
+}
