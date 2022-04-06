@@ -10,7 +10,7 @@ body {
     height: 100vh;
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-image: url(../assets/fon.jpg);
-    background-size: cover;
+    background-size: cover; 
 }
 
 #game {
