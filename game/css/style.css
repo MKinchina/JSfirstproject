@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#game {
+    height: 400px;
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../assets/city.png');
+    background-size: cover;  
+}
+
+#game .cat {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+#game .cat img {
+    height: 100px;
+    width: 90px;
+}
+
+.catActive {
+    animation: animatecat 0.5s linear infinite;
+}
+
+@keyframes animatecat {
+
+    0%,
+    100% {
+        bottom: 28px;
+    }
+
+    45%,
+    55% {
+        bottom: 160px;
+    }
+}
+
+#game .boxes {
+    height: 80px;
+    width: 125px;
+    position: absolute;
+    bottom: 0px;
+    right: -20px;
+}
+
+#game .boxes img {
+    height: 80px;
+    width: 80px;
+}
+
+.boxesActive {
+    animation: boxesAnimate 1s linear infinite;
+}
+
+@keyframes boxesAnimate {
+    0% {
+        right: -125px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+.score {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.gameOver {
+    display: none;
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 362px;
+    height: 150px;
+    color: black;
+}
