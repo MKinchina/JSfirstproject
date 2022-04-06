@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -9,6 +8,9 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-image: url(../assets/fon.jpg);
+    background-size: cover;
 }
 
 #game {
@@ -83,6 +85,7 @@ body {
     position: absolute;
     top: 20px;
     right: 0;
+    font-size: 25px;
 }
 
 .gameOver {

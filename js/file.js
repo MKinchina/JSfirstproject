@@ -5,7 +5,7 @@ const boxes = document.createElement('div');
 let score = document.createElement('p');
 const gameOver = document.createElement('p');
  
-score.innerHTML = 'Score: 00.'
+score.innerText = 'Score: 00.'
 imgCat.src = './assets/kitty.png'
 imgBoxes.src ='./assets/boxes.png'
 
@@ -28,7 +28,7 @@ let playerScore = 0;
 
 let scoreCounter = () => {
     playerScore++;
-    score.innerHTML = `Score ${playerScore}`;
+    score.innerText = `Score ${playerScore}`;
 }
 
 document.addEventListener("keydown", (start) => {
