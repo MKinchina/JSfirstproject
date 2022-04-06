@@ -3,25 +3,36 @@
     height: 400px;
     border-bottom: 2px solid black;
     margin: 0 auto;
+    background-image: url(img/city.png);
+    background-size: 700px 400px;
+}
+
+.gameover {
+    display: none;
+    font-size: 70px;
+    position: absolute;
+    height: 100px;
+    left: calc(50% - 150px);
+    top: calc(50% - 250px);
 }
 
 .cat {
-    width: 85px;
-    height: 70px;
+    width: 100px;
+    height: 90px;
     background-image: url(img/kitty.png);
-    background-size: 80px 70px;
+    background-size: 100px 90px;
     position: relative;
-    top: 320px;
+    top: 300px;
     left: 100px;
 }
 
 .boxes {
-    width: 80px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-image: url(img/boxes.png);
-    background-size:  80px 70px;
+    background-size:  60px 60px;
     position: relative;
-    top: 282px;
+    top: 252px;
     left: 540px;
     animation: boxesRun 1s infinite linear;
 }
@@ -36,17 +47,23 @@
 }
 
 .jump {
-    animation: jump 0.5s linear;
+    animation: jump 0.6s linear;
 }
 
 @keyframes jump {
     0% {
-        top: 330px;
+        top: 300px;
+    }
+    20% {
+        top: 250px;
     }
     50% {
-        top: 220px;
+        top: 190px;
+    }
+    80% {
+        top: 250px;
     }
     100% {
-        top: 330px;
+        top: 300px;
     }
 }
