@@ -6,8 +6,8 @@ let score = document.createElement('p');
 const gameOver = document.createElement('p');
  
 score.innerHTML = 'Score: 00.'
-imgCat.src = 'assets/kitty.png'
-imgBoxes.src = 'assets/boxes.png'
+imgCat.src = './assets/kitty.png'
+imgBoxes.src ='./assets/boxes.png'
 
 cat.classList.add('cat');
 boxes.classList.add('boxes');
